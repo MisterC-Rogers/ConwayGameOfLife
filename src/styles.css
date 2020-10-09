@@ -1,0 +1,213 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(169, 255, 169);
+  margin: auto;
+  text-align: center;
+  width: 50%;
+  margin-top: 10px;
+}
+
+p {
+  color: rgb(138, 233, 138);
+}
+body {
+  background: rgb(77, 76, 76);
+}
+.container {
+  max-width: 950px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(77, 76, 76);
+  margin: auto;
+  width: 98%;
+  /* height: 95vh; */
+}
+.body {
+  width: 98%;
+  height: 98%;
+  margin: 20px;
+}
+.main {
+  display: flex;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+.tooSmall {
+  display: none;
+}
+.colorPicker {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  align-content: center;
+}
+.colorPicker p {
+  margin-bottom: 0;
+}
+.colorPickerInput {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 90%;
+  margin: 10px auto;
+}
+.colorPickerInput p {
+  margin: auto 0;
+}
+.gridsize {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.dropdown {
+  width: 40%;
+  display: inline-block;
+  position: relative;
+}
+.dropdown button {
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: #4aa810;
+  box-shadow: 0px 3px #3e8c0d;
+  transition: 0.3s;
+}
+
+.dropdown div {
+  visibility: hidden;
+  z-index: 1;
+  position: absolute;
+  min-width: 100%;
+}
+.dropdown:hover div {
+  visibility: visible;
+}
+.dropdown div button {
+  display: block;
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: none;
+  margin: 5px;
+}
+
+.rangeDiv {
+  width: 98%;
+  margin: 5% auto;
+}
+.rangePTag {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  text-decoration: underline;
+}
+.currSpeed {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.range {
+  width: 98%;
+}
+
+/* CSS for the BUTTON.JS */
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 50px auto 75px;
+}
+.button {
+  height: 30px;
+  font-size: 16px;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  background-color: #4aa810;
+  box-shadow: 0px 3px #3e8c0d;
+  margin: 5px;
+}
+.button:active {
+  margin: 3px 0px -3px 0px;
+  box-shadow: none;
+  outline: none;
+}
+.button:hover {
+  cursor: pointer;
+}
+
+/* CSS properties for the GRID.JS */
+.grid {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 0;
+  box-shadow: 0px 0px 20px white;
+  margin-top: 10px;
+}
+
+.genTag {
+  margin: 10px auto;
+  text-align: center;
+}
+
+.cell:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 890px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .controls {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .colorPickerInput {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px auto;
+  }
+  .colorInputBtn {
+    margin: auto;
+  }
+  .grid {
+    width: 90%;
+  }
+}
+@media (max-width: 745px) {
+  .controls {
+    display: flex;
+    flex-direction: row;
+    margin: 10px auto;
+  }
+  .button {
+    font-size: 12px;
+  }
+}
+@media (max-width: 500px) {
+  .body {
+    display: none;
+  }
+  .tooSmall {
+    display: flex;
+    width: 75%;
+    height: 80%;
+    text-align: center;
+    margin: 50px auto;
+    font-size: 20px;
+  }
+}
