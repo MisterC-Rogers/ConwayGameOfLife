@@ -1,8 +1,8 @@
 {
   "name": "conways-game-of-life",
+  "author": "Charles Rogers",
   "version": "1.0.0",
   "description": "",
-  "author": "Charles Rogers",
   "keywords": [
     "react",
     "g.o.l.",
